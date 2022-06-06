@@ -4,6 +4,10 @@ class Inventory {
     this.#list = list;
   }
 
+  listItems() {
+    return this.#list;
+  }
+
   equals(otherInventory) {
     return (
       otherInventory instanceof Inventory &&

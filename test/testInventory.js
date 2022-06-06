@@ -7,4 +7,10 @@ describe('inventory', () => {
     const i2 = new Inventory(['a', 'b']);
     assert.ok(i1.equals(i2));
   });
+
+  it('Should list the items in the inventory', () => {
+    const inventory = new Inventory(['a', 'b']);
+    const expected = ['a', 'b'];
+    assert.deepStrictEqual(inventory.listItems(), expected);
+  });
 });
