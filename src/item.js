@@ -16,6 +16,7 @@ class Item {
       this.#quantity === otherItem.#quantity
     );
   }
+
 }
 
 exports.Item = Item;
